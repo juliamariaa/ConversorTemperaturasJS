@@ -50,6 +50,7 @@ input[type="number"]:focus {
     border: none;
     border-radius: 20px;
     color: #ffffff;
+    cursor: pointer;
     font-size: 15px;
     font-weight: 500;
     height: 30px;
