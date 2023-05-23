@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="author" content="Júlia Maria">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- JavaScript -->
+    <script src="assets/js/functions.js" defer></script>
+    <script src="assets/js/app.js" defer></script>
+
+    <title>Conversor de Temperatura</title>
+</head>
+<body>
+    <main>
+        <div class="container">
+            <h1>CONVERSOR DE TEMPERATURA</h1>
+            <section>
+                <label>Informe a Temperatura</label>
+                <br>
+                <input type="number" id="numberTemperature">
+                <select id="currentTemperature">
+                    <option value="Kelvin">K°</option>
+                    <option value="Celsius">C°</option>
+                    <option value="Fahrenheit">F°</option>
+                </select>
+            </section>
+    
+            <section>
+                <br>
+                <label>Converter em</label>
+                <br>
+                <select id="selectedTemperature">
+                    <option value="Kelvin">Kelvin (K°)</option>
+                    <option value="Celsius" >Celsius (C°)</option>
+                    <option value="Fahrenheit">Fahrenheit (F°)</option>
+                </select>
+            </section>
+            
+            <span id="errorMessage"></span>
+            <button id="button">
+                Converter
+            </button>
+        </div>
+    </main>
+    <aside>
+        <span id="result" aria-live="polite">275°C</span>
+    </aside> 
+</body>
+</html>

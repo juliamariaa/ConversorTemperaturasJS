@@ -1,0 +1,137 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Reset CSS */
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Main  */
+body{
+    align-items: center;
+    display: flex;
+    height: 100vh;
+    justify-content: center;
+    width: 100vw;
+}
+
+aside{
+    background: #2a9d8f;
+    border: 4px solid #2a9d8f;
+    height: 400px;
+    width: 350px;
+}
+
+.container{
+    margin-left: 30px;
+}
+
+h1{
+    color: #2a9d8f;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"]:focus {
+    outline: none;
+}
+
+#button{
+    background-color: #2a9d8f;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 500;
+    height: 30px;
+    margin-top: 20px;
+    width: 120px;
+}
+
+#currentTemperature{
+    margin-left: 2px;
+}
+
+#errorMessage{
+    color: red;
+    font-size: 12px;
+    margin-top: 8px;
+}
+
+label{
+    color: #2a9d8f;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+main{ 
+    border: 4px solid #2a9d8f;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    height: 400px;
+    justify-content: center;
+    text-align: left;
+    width: 350px;
+}
+
+#numberTemperature, 
+#selectedTemperature,
+#currentTemperature{
+    height: 30px;
+}
+
+#result{
+    align-items: center;
+    color: #ffffff;
+    display: flex;
+    font-size: 50px;
+    font-weight: 600;
+    height: 400px;
+    justify-content: center;
+}
+
+/* Responsividade Mobile */
+@media (max-width: 430px) {
+    body{
+        flex-direction: column;
+    }
+
+    main{ 
+        height: 45%;
+        width: 80%;
+    }
+
+    button{
+        background-color: #2a9d8f;
+        border: none;
+        border-radius: 20px;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 500;
+        height: 30px;
+        margin-bottom: 25px;
+        width: 120px;
+    }
+    
+    aside{
+        height: 70px;
+        width: 80%;
+    }
+
+    #result{
+        font-size: 35px;
+        height: 60px;
+    }    
+}
+
